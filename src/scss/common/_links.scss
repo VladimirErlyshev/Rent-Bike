@@ -1,0 +1,23 @@
+.link {
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #dfe2e6;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  color: #cbced2;
+  font-family: 'Font Awesome Free';
+  text-align: center;  
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: #658099;
+    color: $text-white;
+  }
+
+  &:focus {
+    background-color: #435566;
+    color: $text-white;
+  }
+}

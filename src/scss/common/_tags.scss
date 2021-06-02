@@ -1,0 +1,23 @@
+.tag {
+  &__icon {
+    display: inline-flex;
+    width: 46px;
+    height: 46px;
+    border: transparent;
+    background-color: transparent;
+    font-size: 20px;
+    color: #658099;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: #658099;
+      color: $text-white;      
+    }
+
+    &:focus {
+      color: $text-white;
+      background-color: #435566;
+    }
+  }
+}

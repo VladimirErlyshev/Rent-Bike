@@ -1,0 +1,60 @@
+.header {
+  background: url("../images/header-bg.png");
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  padding-top: 16px;
+  padding-bottom: 25px;
+}
+
+.header-controls {
+  &__item {
+    & + & {
+      margin-left: 45px;
+    }
+  }
+}
+
+.menu-button {
+  width: 22px;
+  height: 18px;
+
+  &__line {
+    background-color: $bg-white;
+    border-radius: 2px;
+    display: block;
+    height: 4px;
+    width: 100%;
+
+    & + & {
+      margin-top: 3px;
+    }
+  }
+}
+
+.search-button {
+  &__icon {
+    color: $text-white;
+    font-size: 2.5rem;
+  }
+}
+
+.user-control {
+  &__button {
+    &-icon {
+      color: $text-white;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.cart-control {
+  &__button {
+    &-icon {
+      color: $text-white;
+      font-size: 2.5rem;
+
+      &:hover {
+        color: $text-green;
+      }
+    }
+  }
+}

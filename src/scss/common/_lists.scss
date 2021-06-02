@@ -1,0 +1,62 @@
+.ol {
+  li + li,
+  li > ul,
+  li > ol {
+    margin-top: 25px;
+  }
+
+  counter-reset: item;
+  margin-bottom: 25px;
+
+  li {
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+}
+
+.ul {
+  li + li,
+  li > ul,
+  li > ol {
+    margin-top: 25px;
+  }
+  
+  ol {
+    margin-left: 40px;
+  }
+
+  li::before {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    margin-right: 20px;
+  }
+
+  &__square {
+    & > li::before {
+      content: "\f14a";
+      color: $text-white;
+      background-color: $text-blue;
+      border: 2px solid #fff;
+      border-radius: 25%;
+    }
+  }
+
+  &__circle {
+    & > li::before {
+      content: "\f058";
+      color: $text-blue;
+      background-color: #fff;
+      border-radius: 25%;
+    }
+  }
+}

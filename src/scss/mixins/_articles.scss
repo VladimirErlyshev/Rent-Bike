@@ -1,0 +1,40 @@
+@mixin make-articles(
+  $sizes: $article-sizes,
+  $color: $article-color,
+  $font: $article-ff
+) {
+  .article {
+    color: $color;
+    font-family: $font;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+    line-height: 1.75;
+
+    @each $name, $value in $sizes {
+      &--#{$name} {
+        font-size: $value;
+      }
+    }
+
+    &--pre,
+    &--code {
+      font-size: 1.8rem;
+      background-color: $bg-light-grey;
+      border: 2px solid #edf1f5;
+      padding: 4px 6px;
+      font-weight: 400;
+      color: $text-dark-grey;
+    }
+
+    &--code {
+      display: inline-block;
+      line-height: 24px;
+    }
+
+    &--pre {
+      display: block;
+      line-height: 28px;
+      width: 100%;
+    }
+  }
+}

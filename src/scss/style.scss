@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands';
+
+@import 'reset';
+@import 'mixins/index';
+@import 'mixins/sprite';
+@import 'grid/index';
+@import 'common/index';
+@import 'components/index';
+@import 'layout/index';
+
+//Libs
+@import 'libs/index'

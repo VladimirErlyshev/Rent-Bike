@@ -1,0 +1,26 @@
+.table {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.2px;
+  border: 3px solid #f0f3f7 !important; 
+  color: $text-dark;
+  border-collapse: collapse;
+
+  &__thead {
+    color: #8c8c8c;
+  }
+
+  th,
+  td {
+    border: 2px solid #ffffff;
+    padding: 15px 10px;
+    text-align: left;
+    table-layout: fixed;
+  }
+
+  &__thead,
+  tbody tr:nth-child(even) {
+    background-color: $bg-grey;
+  }
+}
